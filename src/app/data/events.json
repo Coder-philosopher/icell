@@ -1,0 +1,177 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "InnovateNIT 2023",
+      "description": "Our annual innovation summit bringing together industry leaders, investors, and student innovators. Participate in workshops, panel discussions, and startup pitches.",
+      "image": "https://images.unsplash.com/photo-1540317580384-e5d43867caa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "date": "2023-03-15",
+      "endDate": "2023-03-17",
+      "time": "9:00 AM - 6:00 PM",
+      "location": "Main Auditorium, NIT Raipur",
+      "category": "annual",
+      "featured": true,
+      "month": 3
+    },
+    {
+      "id": 2,
+      "title": "Startup Showcase - March",
+      "description": "Monthly pitch sessions where student entrepreneurs present their startup ideas for feedback from industry mentors and potential investors.",
+      "image": "https://images.unsplash.com/photo-1559223607-a43f990c095d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "date": "2023-03-31",
+      "time": "3:00 PM - 7:00 PM",
+      "location": "Innovation Hub",
+      "category": "monthly",
+      "month": 3
+    },
+    {
+      "id": 3,
+      "title": "Tech Tuesdays - Web3",
+      "description": "Weekly workshop on blockchain and Web3 technologies led by industry experts from Polygon and Ethereum Foundation.",
+      "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "date": "2023-03-07",
+      "time": "5:00 PM - 7:00 PM",
+      "location": "Tech Lab, CS Building",
+      "category": "weekly",
+      "month": 3
+    },
+    {
+      "id": 4,
+      "title": "Tech Tuesdays - AI/ML",
+      "description": "Weekly workshop focusing on practical applications of AI and Machine Learning, featuring hands-on sessions with TensorFlow and PyTorch.",
+      "image": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "date": "2023-03-14",
+      "time": "5:00 PM - 7:00 PM",
+      "location": "Tech Lab, CS Building",
+      "category": "weekly",
+      "month": 3
+    },
+    {
+      "id": 5,
+      "title": "Tech Tuesdays - IoT Workshop",
+      "description": "Weekly workshop on building Internet of Things projects using Arduino and Raspberry Pi. Participants will build a smart home monitoring system.",
+      "image": "https://images.unsplash.com/photo-1563770557287-c6a12941be1c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "date": "2023-03-21",
+      "time": "5:00 PM - 7:00 PM",
+      "location": "Tech Lab, CS Building",
+      "category": "weekly",
+      "month": 3
+    },
+    {
+      "id": 6,
+      "title": "Tech Tuesdays - Mobile App Development",
+      "description": "Weekly workshop on cross-platform mobile app development with React Native and Flutter. Learn to build and deploy apps to both iOS and Android.",
+      "image": "https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "date": "2023-03-28",
+      "time": "5:00 PM - 7:00 PM",
+      "location": "Tech Lab, CS Building",
+      "category": "weekly",
+      "month": 3
+    },
+    {
+      "id": 7,
+      "title": "Hackathon Series - March Edition",
+      "description": "24-hour coding challenge focused on solving healthcare problems with technology. Teams will compete for prizes and mentorship opportunities.",
+      "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "date": "2023-03-04",
+      "endDate": "2023-03-05",
+      "time": "Starts at 9:00 AM",
+      "location": "Innovation Hub",
+      "category": "monthly",
+      "month": 3
+    },
+    {
+      "id": 8,
+      "title": "Startup Showcase - April",
+      "description": "Monthly pitch sessions where student entrepreneurs present their startup ideas for feedback from industry mentors and potential investors.",
+      "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "date": "2023-04-28",
+      "time": "3:00 PM - 7:00 PM",
+      "location": "Innovation Hub",
+      "category": "monthly",
+      "month": 4
+    },
+    {
+      "id": 9,
+      "title": "Tech Tuesdays - Cloud Computing",
+      "description": "Weekly workshop on cloud infrastructure using AWS, Azure, and Google Cloud. Learn to deploy scalable applications and manage resources effectively.",
+      "image": "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "date": "2023-04-04",
+      "time": "5:00 PM - 7:00 PM",
+      "location": "Tech Lab, CS Building",
+      "category": "weekly",
+      "month": 4
+    },
+    {
+      "id": 10,
+      "title": "Hackathon Series - April Edition",
+      "description": "24-hour coding challenge focused on fintech innovation. Build the next generation of financial technology solutions with our industry partners.",
+      "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "date": "2023-04-01",
+      "endDate": "2023-04-02",
+      "time": "Starts at 9:00 AM",
+      "location": "Innovation Hub",
+      "category": "monthly",
+      "month": 4
+    },
+    {
+      "id": 11,
+      "title": "Tech Tuesdays - Cybersecurity",
+      "description": "Weekly workshop on ethical hacking and cybersecurity best practices. Learn to identify vulnerabilities and protect digital assets.",
+      "image": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "date": "2023-04-11",
+      "time": "5:00 PM - 7:00 PM",
+      "location": "Tech Lab, CS Building",
+      "category": "weekly",
+      "month": 4
+    },
+    {
+      "id": 12,
+      "title": "Tech Tuesdays - Data Science",
+      "description": "Weekly workshop on data analysis and visualization using Python, Pandas, and Matplotlib. Learn to extract insights from complex datasets.",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "date": "2023-04-18",
+      "time": "5:00 PM - 7:00 PM",
+      "location": "Tech Lab, CS Building",
+      "category": "weekly",
+      "month": 4
+    },
+    {
+      "id": 13,
+      "title": "Tech Tuesdays - Game Development",
+      "description": "Weekly workshop on game design and development with Unity. Create your own 2D platformer game by the end of the session.",
+      "image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "date": "2023-04-25",
+      "time": "5:00 PM - 7:00 PM",
+      "location": "Tech Lab, CS Building",
+      "category": "weekly",
+      "month": 4
+    },
+    {
+      "id": 14,
+      "title": "Innovation Awards 2023",
+      "description": "Annual celebration recognizing outstanding student innovations and providing grant funding for promising projects. Join us for an evening of inspiration and recognition.",
+      "image": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "date": "2023-11-10",
+      "time": "6:00 PM - 9:00 PM",
+      "location": "Main Auditorium",
+      "category": "annual",
+      "month": 11
+    }
+  ],
+  
+  "months": [
+    { "id": 1, "name": "January" },
+    { "id": 2, "name": "February" },
+    { "id": 3, "name": "March" },
+    { "id": 4, "name": "April" },
+    { "id": 5, "name": "May" },
+    { "id": 6, "name": "June" },
+    { "id": 7, "name": "July" },
+    { "id": 8, "name": "August" },
+    { "id": 9, "name": "September" },
+    { "id": 10, "name": "October" },
+    { "id": 11, "name": "November" },
+    { "id": 12, "name": "December" }
+  ]
+}

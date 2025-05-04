@@ -1,0 +1,51 @@
+body {
+  cursor: none;
+}
+
+/* Outer Cursor: gray ring */
+.custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1.5px solid #999; /* light gray border */
+  transition: transform 0.15s ease, opacity 0.2s ease;
+  transform: translate(-50%, -50%);
+}
+
+/* Inner Cursor: solid green dot */
+.custom-cursor-inner {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #52B8C3; /* light green */
+  transition: transform 0.1s ease;
+  transform: translate(-50%, -50%);
+}
+
+/* Hover over links or buttons */
+.cursor-hover {
+  transform: translate(-50%, -50%) scale(1.4);
+  border-color: #3776E0;
+}
+
+.cursor-inner-hover {
+  transform: translate(-50%, -50%) scale(0.7);
+  background: #3776E0;
+}
+
+/* Click effect */
+.cursor-click {
+  transform: translate(-50%, -50%) scale(0.85);
+  opacity: 0.7;
+}
+
+.cursor-inner-click {
+  transform: translate(-50%, -50%) scale(1.2);
+}
