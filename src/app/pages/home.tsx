@@ -27,16 +27,14 @@ export default function Home() {
   
   // Add global window properties to allow opening of modals from other components
   useEffect(() => {
-    // @ts-ignore - Adding custom properties to window
+    
     window.openTeamModal = openTeamModal;
-    // @ts-ignore
-    window.openEventsModal = openEventsModal;
+        window.openEventsModal = openEventsModal;
     
     return () => {
-      // @ts-ignore - Cleanup custom properties
+    
       delete window.openTeamModal;
-      // @ts-ignore
-      delete window.openEventsModal;
+          delete window.openEventsModal;
     };
   }, []);
 

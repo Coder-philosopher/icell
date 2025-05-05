@@ -1,6 +1,6 @@
 import ScrollReveal from "./ui/ScrollReveal";
 import { GithubIcon, LinkedinIcon, TwitterIcon } from "lucide-react";
-import Image from "next/image";
+
 
 interface TeamMemberProps {
   name: string;

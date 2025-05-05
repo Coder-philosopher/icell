@@ -13,7 +13,7 @@ export default function JoinSection() {
         <ScrollReveal className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">Ready to Join the Innovation Movement?</h2>
           <p className="text-xl opacity-90 mb-10">
-            Become a part of NIT Raipur's vibrant innovation ecosystem. 
+            Become a part of NIT Raipur&apos;s vibrant innovation ecosystem. 
             Apply to join the Innovation Cell and embark on a journey of creativity and entrepreneurship.
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
