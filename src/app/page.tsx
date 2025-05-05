@@ -59,8 +59,8 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <AboutSection />
-      <GallerySection />
       <PartnersSection />
+      <GallerySection />
       <BrochureSection />
       <ContactSection />
       <Footer />

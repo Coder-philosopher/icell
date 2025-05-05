@@ -82,7 +82,7 @@ export default function PartnersSection() {
         <ScrollReveal>
           <div className="text-center mb-16">
             <h6 className="text-primary font-medium mb-2">OUR PARTNERS</h6>
-            <h2 className="text-3xl md:text-4xl font-clash font-bold mb-4">Collaborating With Industry Leaders</h2>
+            <h2 className="text-3xl md:text-4xl font-clash font-bold mb-4">Collaborating With Industries</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Our innovation initiatives are supported by these leading organizations that provide technology, mentorship, and resources.
             </p>
