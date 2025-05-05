@@ -182,7 +182,7 @@ export default function HeroSection() {
                   variant="default" 
                   size="lg"
                   onClick={() => {
-                    // @ts-expect-error - Using global function
+                    
                     if (window.openEventsModal) window.openEventsModal();
                   }}
                 >
@@ -198,7 +198,7 @@ export default function HeroSection() {
                   variant="outline" 
                   size="lg"
                   onClick={() => {
-                    // @ts-expect-error - Using global function
+                    
                     if (window.openTeamModal) window.openTeamModal();
                   }}
                 >

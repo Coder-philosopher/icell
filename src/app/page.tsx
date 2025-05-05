@@ -25,19 +25,17 @@ export default function Home() {
   const openEventsModal = () => {
     setIsEventsModalOpen(true);
   };
-  
+
   // Add global window properties to allow opening of modals from other components
   useEffect(() => {
-    
-    window.openTeamModal = openTeamModal;
-    
-    window.openEventsModal = openEventsModal;
+    // Assign to window object
+    (window as Window).openTeamModal = openTeamModal;
+    (window as Window).openEventsModal = openEventsModal;
     
     return () => {
-    
-      delete window.openTeamModal;
-    
-      delete window.openEventsModal;
+      // Clean up global functions
+      (window as Window).openTeamModal = undefined;
+      (window as Window).openEventsModal = undefined;
     };
   }, []);
 
