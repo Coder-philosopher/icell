@@ -5,8 +5,8 @@ import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import GallerySection from "@/components/GallerySection";
 import BrochureSection from "@/components/BrochureSection";
-import ContactSection from "@/components/ContactSection";
-import PartnersSection from "@/components/PartnersSection";
+// import ContactSection from "@/components/ContactSection";
+// import PartnersSection from "@/components/PartnersSection";
 import TeamModal from "@/components/TeamModal";
 import EventsModal from "@/components/EventsModal";
 import Footer from "@/components/Footer";
@@ -57,10 +57,10 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <AboutSection />
-      <PartnersSection />
+      {/* <PartnersSection /> */}
       <GallerySection />
       <BrochureSection />
-      <ContactSection />
+      {/* <ContactSection /> */}
       <Footer />
       
       {/* Team Modal - only renders in DOM when open */}

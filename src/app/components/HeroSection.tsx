@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import ScrollReveal from "./ui/ScrollReveal";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HeroSection() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -177,36 +178,32 @@ export default function HeroSection() {
               </p>
               
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                <Button 
-                  className="relative px-8 py-6 overflow-hidden cursor-none rounded-lg font-medium bg-brand-blue hover:bg-brand-blue/90 transition-all duration-300 font-inter" 
-                  variant="default" 
-                  size="lg"
-                  onClick={() => {
-                    
-                    if (window.openEventsModal) window.openEventsModal();
-                  }}
-                >
-                  <span className="relative group flex items-center gap-2">
-                    <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-brand-blue to-brand-teal opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-                    <span className="z-10 relative">Explore Events</span>
-                    <span className="z-10 relative inline-block w-2 h-2 rounded-full bg-white group-hover:scale-150 transition-transform duration-300"></span>
-                  </span>
-                </Button>
+                <Link href="/events">
+                  <Button 
+                    className="relative px-8 py-6 overflow-hidden cursor-none rounded-lg font-medium bg-brand-blue hover:bg-brand-blue/90 transition-all duration-300 font-inter" 
+                    variant="default" 
+                    size="lg"
+                  >
+                    <span className="relative group flex items-center gap-2">
+                      <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-brand-blue to-brand-teal opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                      <span className="z-10 relative">Explore Events</span>
+                      <span className="z-10 relative inline-block w-2 h-2 rounded-full bg-white group-hover:scale-150 transition-transform duration-300"></span>
+                    </span>
+                  </Button>
+                </Link>
                 
-                <Button 
-                  className="relative px-8 py-6 rounded-lg font-medium cursor-none bg-background border border-brand-blue/40 hover:border-brand-blue/60 hover:bg-brand-blue/5 transition-all duration-300 font-inter" 
-                  variant="outline" 
-                  size="lg"
-                  onClick={() => {
-                    
-                    if (window.openTeamModal) window.openTeamModal();
-                  }}
-                >
-                  <span className="relative flex items-center gap-2">
-                    <span className="relative">Meet Our Team</span>
-                    <span className="relative inline-block w-2 h-2 rounded-full bg-brand-teal group-hover:scale-150 transition-transform duration-300"></span>
-                  </span>
-                </Button>
+                <Link href="/team">
+                  <Button 
+                    className="relative px-8 py-6 rounded-lg font-medium cursor-none bg-background border border-brand-blue/40 hover:border-brand-blue/60 hover:bg-brand-blue/5 transition-all duration-300 font-inter" 
+                    variant="outline" 
+                    size="lg"
+                  >
+                    <span className="relative flex items-center gap-2">
+                      <span className="relative">Meet Our Team</span>
+                      <span className="relative inline-block w-2 h-2 rounded-full bg-brand-teal group-hover:scale-150 transition-transform duration-300"></span>
+                    </span>
+                  </Button>
+                </Link>
               </div>
               
               {/* Statistics with animated counting effect */}

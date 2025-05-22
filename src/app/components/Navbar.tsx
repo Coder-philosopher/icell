@@ -5,16 +5,17 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Menu, ArrowDownLeft } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface NavLinkProps {
   href: string;
   label: string;
-  onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
+  onClick?: () => void;
 }
 
 function NavLink({ href, label, onClick }: NavLinkProps) {
   return (
-    <a
+    <Link
       href={href}
       onClick={onClick}
       className="cursor-none relative text-muted-foreground font-medium transition-colors duration-300 hover:text-brand-blue group overflow-hidden font-inter flex items-center gap-1"
@@ -22,7 +23,7 @@ function NavLink({ href, label, onClick }: NavLinkProps) {
       <span className="relative z-10">{label}</span>
       <ArrowDownLeft className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:translate-y-1 text-brand-teal" />
       <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-cyan transition-all duration-300 group-hover:w-full"></span>
-    </a>
+    </Link>
   );
 }
 
@@ -82,21 +83,6 @@ export default function Navbar() {
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
   const closeMobileMenu = () => setMobileMenuOpen(false);
 
-  const handleNavLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    const href = e.currentTarget.getAttribute("href");
-    if (href?.startsWith("#")) {
-      const target = document.getElementById(href.substring(1));
-      if (target) {
-        window.scrollTo({
-          top: target.offsetTop - 80,
-          behavior: "smooth",
-        });
-        closeMobileMenu();
-      }
-    }
-  };
-
   return (
     <header
       className={cn(
@@ -111,6 +97,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex items-center space-x-3 cursor-none">
             <div className="w-12 h-12 relative overflow-hidden">
+              <Link href="/">
               <Image
                 src="/logo-bg.png"
                 alt="Innovation Cell Logo"
@@ -118,7 +105,9 @@ export default function Navbar() {
                 height={48}
                 className="w-full h-full object-contain"
               />
+              </Link>
             </div>
+            <Link href="/">
             <div>
               <h1 className="font-montserrat tracking-tight font-bold text-2xl text-foreground bg-gradient-to-r from-brand-blue to-brand-teal bg-clip-text text-transparent">
                 Innovation Cell
@@ -127,15 +116,16 @@ export default function Navbar() {
                 NIT Raipur
               </p>
             </div>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex  items-center space-x-8">
-            <NavLink href="#about" label="About" onClick={handleNavLinkClick} />
-            <NavLink href="#events" label="Events" onClick={handleNavLinkClick} />
-            <NavLink href="#gallery" label="Gallery" onClick={handleNavLinkClick} />
-            <NavLink href="#team" label="Team" onClick={handleNavLinkClick} />
-            <NavLink href="#contact" label="Contact" onClick={handleNavLinkClick} />
+            <NavLink href="/about" label="About" />
+            <NavLink href="/events" label="Events" />
+            <NavLink href="/gallery" label="Gallery" />
+            <NavLink href="/team" label="Team" />
+            <NavLink href="/contact" label="Contact" />
           </div>
 
           {/* Mobile Menu Button */}
@@ -161,11 +151,11 @@ export default function Navbar() {
         )}
       >
         <div className="flex flex-col space-y-5">
-          <NavLink href="#about" label="About" onClick={handleNavLinkClick} />
-          <NavLink href="#events" label="Events" onClick={handleNavLinkClick} />
-          <NavLink href="#gallery" label="Gallery" onClick={handleNavLinkClick} />
-          <NavLink href="#team" label="Team" onClick={handleNavLinkClick} />
-          <NavLink href="#contact" label="Contact" onClick={handleNavLinkClick} />
+          <NavLink href="/about" label="About" onClick={closeMobileMenu} />
+          <NavLink href="/events" label="Events" onClick={closeMobileMenu} />
+          <NavLink href="/gallery" label="Gallery" onClick={closeMobileMenu} />
+          <NavLink href="/team" label="Team" onClick={closeMobileMenu} />
+          <NavLink href="/contact" label="Contact" onClick={closeMobileMenu} />
         </div>
       </div>
     </header>

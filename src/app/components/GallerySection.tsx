@@ -9,6 +9,10 @@ interface GalleryItemProps {
 }
 
 function GalleryItem({ image, title, date, featured = false }: GalleryItemProps) {
+  const handleViewGallery = () => {
+    window.location.href = "/gallery";
+  };
+
   return (
     <div className={`relative overflow-hidden ${featured ? 'md:col-span-2 md:row-span-2' : ''}`}>
       <div className="aspect-square md:aspect-auto h-full relative group rounded-xl overflow-hidden bg-card border border-border shadow-sm">
@@ -27,7 +31,10 @@ function GalleryItem({ image, title, date, featured = false }: GalleryItemProps)
           </div>
           
           {/* View Button */}
-          <button className="inline-flex items-center justify-center px-4 py-2 bg-primary/10 hover:bg-primary/20 text-primary rounded-lg transition-all duration-300 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 delay-200 text-sm">
+          <button 
+            onClick={handleViewGallery}
+            className="inline-flex items-center justify-center px-4 py-2 bg-primary/10 hover:bg-primary/20 text-primary rounded-lg transition-all duration-300 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 delay-200 text-sm"
+          >
             <Eye className="h-4 w-4 mr-2" /> View Gallery
           </button>
         </div>
@@ -44,35 +51,35 @@ function GalleryItem({ image, title, date, featured = false }: GalleryItemProps)
 export default function GallerySection() {
   const galleryItems: GalleryItemProps[] = [
     {
-      image: "https://images.unsplash.com/photo-1540317580384-e5d43867caa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      title: "24-Hour Hackathon",
-      date: "October 2022",
+      image: "/images/gallery/image1.png",
+      title: "Inauguration Ceremony of Avinya'25",
+      date: "29 March 2025",
       featured: true
     },
     {
-      image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      title: "AI Workshop Series",
-      date: "September 2022"
+      image: "/images/gallery/image2.png",
+      title: "I-Talk NASA Europa Clipper Mission",
+      date: "04 April 2025"
     },
     {
-      image: "https://images.unsplash.com/photo-1560439514-4e9645039924?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      title: "Innovation Expo 2022",
-      date: "March 2022"
+      image: "/images/gallery/image3.png",
+      title: "Discussion on Innovations in Sustainable Startups",
+      date: "29 March 2025"
     },
     {
-      image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      title: "Startup Pitch Day",
-      date: "November 2022"
+      image: "/images/gallery/image4.png",
+      title: "Workshop on Sensors for Space Applications",
+      date: "20 January 2025"
     },
     {
-      image: "https://images.unsplash.com/photo-1544531585-9847b68c8c86?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      title: "Industry Expert Talk",
-      date: "January 2023"
+      image: "/images/gallery/image5.png",
+      title: "Speaker Session - Raj Vikramaditya (Striver)",
+      date: "29 March 2025"
     },
     {
-      image: "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      title: "Awards Ceremony",
-      date: "December 2022"
+      image: "/images/gallery/image6.png",
+      title: "Workshop on Finite Element Methods for Advanced Materials",
+      date: "17 September 2024"
     }
   ];
 
