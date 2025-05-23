@@ -3,6 +3,7 @@ import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import React, { useState } from 'react'
 import { Calendar, Clock, MapPin, Users, ArrowRight, Filter } from "lucide-react";
+import Link from 'next/link';
 
 interface EventProps {
   id: string;
@@ -574,22 +575,28 @@ function Page() {
 
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-r from-brand-blue to-brand-teal text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-heading font-bold mb-4">Ready to Join the Innovation Journey?</h2>
-          <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-            Don&apos;t miss out on these incredible opportunities to learn, create, and innovate. 
-            Register for upcoming events and be part of the innovation community.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-brand-blue px-8 py-3 rounded-lg font-medium hover:bg-white/90 transition-colors">
-              View All Events
-            </button>
-            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-white/10 transition-colors">
-              Contact Us
-            </button>
-          </div>
-        </div>
-      </section>
+  <div className="container mx-auto px-4 text-center">
+    <h2 className="text-3xl font-heading font-bold mb-4">Ready to Join the Innovation Journey?</h2>
+    <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+      Don&apos;t miss out on these incredible opportunities to learn, create, and innovate.
+      Register for upcoming events and be part of the innovation community.
+    </p>
+    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      <Link
+        href="/events"
+        className="bg-white text-brand-blue px-8 py-3 rounded-lg font-medium hover:bg-white/90 transition-colors text-center"
+      >
+        View All Events
+      </Link>
+      <Link
+        href="/contact"
+        className="border-2 border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-white/10 transition-colors text-center"
+      >
+        Contact Us
+      </Link>
+    </div>
+  </div>
+</section>
 
       {/* Event Modal */}
       <EventModal 
