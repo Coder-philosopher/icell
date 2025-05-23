@@ -10,8 +10,6 @@ interface TeamMember {
   department: string;
   level: 'overall' | 'head' | 'core' | 'coordinator' | 'executive';
 }
-
-function TeamMemberCard({ member }: { member: TeamMember }) {
   const getDepartmentIcon = (department: string) => {
     switch (department.toLowerCase()) {
       case 'event management': return <Target className="h-5 w-5" />;
@@ -35,6 +33,8 @@ function TeamMemberCard({ member }: { member: TeamMember }) {
       default: return 'bg-gray-500/10 text-gray-600 border-gray-200';
     }
   };
+
+function TeamMemberCard({ member }: { member: TeamMember }) {
 
   const getLevelBadge = (level: string) => {
     switch (level) {
