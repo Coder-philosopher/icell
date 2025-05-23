@@ -2,7 +2,7 @@
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import React, { useState } from 'react'
-import { Users, Award, Target, Briefcase, PenTool, Code, Megaphone, Camera, FileText, DollarSign, Filter, Search } from "lucide-react";
+import { Users, Award, Target, Briefcase, PenTool, Code, Megaphone, FileText, DollarSign, Filter, Search } from "lucide-react";
 
 interface TeamMember {
   name: string;
@@ -106,7 +106,7 @@ function TeamSection({ title, members, icon, description }: {
   );
 }
 
-function page() {
+function Page() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedDepartment, setSelectedDepartment] = useState<string>('all');
   const [selectedLevel, setSelectedLevel] = useState<string>('all');
@@ -526,7 +526,7 @@ function page() {
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-heading font-bold mb-4">Join Our Innovation Journey</h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Interested in being part of our dynamic team? We're always looking for passionate individuals 
+              Interested in being part of our dynamic team? We&apos;re always looking for passionate individuals 
               who want to contribute to innovation and make a meaningful impact.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -546,4 +546,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
