@@ -267,19 +267,6 @@ function Page() {
       color: getDepartmentColor(dept)
     };
   });
-
-  const getDepartmentIcon = (department: string) => {
-    switch (department.toLowerCase()) {
-      case 'event management': return <Target className="h-6 w-6" />;
-      case 'pr': return <Megaphone className="h-6 w-6" />;
-      case 'documentation': return <FileText className="h-6 w-6" />;
-      case 'web development': return <Code className="h-6 w-6" />;
-      case 'sponsorship': return <DollarSign className="h-6 w-6" />;
-      case 'design': return <PenTool className="h-6 w-6" />;
-      default: return <Users className="h-6 w-6" />;
-    }
-  };
-
   return (
     <>
       <Navbar/>
