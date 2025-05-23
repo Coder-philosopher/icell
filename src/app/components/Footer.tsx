@@ -8,7 +8,7 @@ export default function Footer() {
       {/* Background Effects */}
       <div className="absolute inset-0 z-0 opacity-20">
         <div className="absolute inset-0 bg-gradient-to-br from-brand-blue/5 to-brand-teal/5"></div>
-        <div className="h-full w-full" style={{ backgroundImage: `linear-gradient(transparent 98%, rgba(55, 118, 224, 0.1) 1px), linear-gradient(90deg, transparent 98%, rgba(104, 216, 180, 0.1) 1px)`, backgroundSize: '60px 60px' }}></div>
+        <div className="h-full w-full" style={{ backgroundImage: 'linear-gradient(transparent 98%, rgba(55, 118, 224, 0.1) 1px), linear-gradient(90deg, transparent 98%, rgba(104, 216, 180, 0.1) 1px)', backgroundSize: '60px 60px' }}></div>
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
@@ -36,22 +36,22 @@ export default function Footer() {
               The Innovation Cell at NIT Raipur fosters a culture of innovation and entrepreneurship among students.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-muted-foreground hover:text-brand-blue transition-all duration-300 group">
+              <a href="https://www.facebook.com/innovationcell.nitrr/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-brand-blue transition-all duration-300 group">
                 <div className="p-2 rounded-full bg-brand-blue/5 group-hover:bg-brand-blue/10 transition-all duration-300">
                   <Facebook className="h-4 w-4" />
                 </div>
               </a>
-              <a href="#" className="text-muted-foreground hover:text-brand-blue transition-all duration-300 group">
+              <a href="https://x.com/i_cell_nitrr" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-brand-blue transition-all duration-300 group">
                 <div className="p-2 rounded-full bg-brand-blue/5 group-hover:bg-brand-blue/10 transition-all duration-300">
                   <Twitter className="h-4 w-4" />
                 </div>
               </a>
-              <a href="#" className="text-muted-foreground hover:text-brand-teal transition-all duration-300 group">
+              <a href="https://www.instagram.com/innovation_cell.nitrr/?hl=en" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-brand-teal transition-all duration-300 group">
                 <div className="p-2 rounded-full bg-brand-teal/5 group-hover:bg-brand-teal/10 transition-all duration-300">
                   <Instagram className="h-4 w-4" />
                 </div>
               </a>
-              <a href="#" className="text-muted-foreground hover:text-brand-blue transition-all duration-300 group">
+              <a href="https://in.linkedin.com/company/innovation-cell-nit-raipur" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-brand-blue transition-all duration-300 group">
                 <div className="p-2 rounded-full bg-brand-blue/5 group-hover:bg-brand-blue/10 transition-all duration-300">
                   <Linkedin className="h-4 w-4" />
                 </div>
