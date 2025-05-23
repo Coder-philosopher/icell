@@ -16,11 +16,12 @@ function GalleryItem({ image, title, date, description, category, onClick }: Gal
   return (
     <div className="relative overflow-hidden group cursor-pointer" onClick={onClick}>
       <div className="aspect-square relative group rounded-xl overflow-hidden bg-card border border-border shadow-sm hover:shadow-lg transition-all duration-300">
-        <img 
-          src={image} 
-          alt={title} 
-          className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
-        />
+      <img 
+  src={image} 
+  alt={description || title} 
+  title={description || title}
+  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
+/>
         
         {/* Overlay with text */}
         <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-6">
