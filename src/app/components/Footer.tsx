@@ -96,8 +96,8 @@ export default function Footer() {
             </ul>
           </div>
           
-          {/* Column 3: Resources */}
-          <div>
+
+{/*           <div>
             <h4 className="font-montserrat font-bold text-lg mb-6 text-foreground">Resources</h4>
             <ul className="space-y-3">
               <li>
@@ -131,8 +131,8 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
-          
+          </div> */}
+           
           {/* Column 4: Newsletter */}
           <div>
             <h4 className="font-montserrat font-bold text-lg mb-6 text-foreground">Stay Updated</h4>
@@ -160,7 +160,7 @@ export default function Footer() {
             <p className="text-muted-foreground text-sm mb-4 md:mb-0 font-nunito-sans">
               &copy; 2024 Innovation Cell, NIT Raipur. All rights reserved.
             </p>
-            <div className="flex space-x-6">
+{/*             <div className="flex space-x-6">
               <Link href="/privacy" className="text-muted-foreground hover:text-brand-blue text-sm transition-all duration-300 font-inter relative group">
                 <span className="relative z-10">Privacy Policy</span>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-blue/50 group-hover:w-full transition-all duration-300"></span>
@@ -173,7 +173,7 @@ export default function Footer() {
                 <span className="relative z-10">Cookie Policy</span>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-blue/50 group-hover:w-full transition-all duration-300"></span>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
