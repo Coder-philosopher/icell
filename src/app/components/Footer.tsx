@@ -8,7 +8,7 @@ export default function Footer() {
       {/* Background Effects */}
       <div className="absolute inset-0 z-0 opacity-20">
         <div className="absolute inset-0 bg-gradient-to-br from-brand-blue/5 to-brand-teal/5"></div>
-        <div className="h-full w-full" style={{ backgroundImage: `linear-gradient(transparent 98%, rgba(55, 118, 224, 0.1) 1px), linear-gradient(90deg, transparent 98%, rgba(104, 216, 180, 0.1) 1px)`, backgroundSize: '60px 60px' }}></div>
+        <div className="h-full w-full" style={{ backgroundImage: 'linear-gradient(transparent 98%, rgba(55, 118, 224, 0.1) 1px), linear-gradient(90deg, transparent 98%, rgba(104, 216, 180, 0.1) 1px)', backgroundSize: '60px 60px' }}></div>
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
@@ -36,22 +36,22 @@ export default function Footer() {
               The Innovation Cell at NIT Raipur fosters a culture of innovation and entrepreneurship among students.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-muted-foreground hover:text-brand-blue transition-all duration-300 group">
+              <a href="https://www.facebook.com/innovationcell.nitrr/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-brand-blue transition-all duration-300 group">
                 <div className="p-2 rounded-full bg-brand-blue/5 group-hover:bg-brand-blue/10 transition-all duration-300">
                   <Facebook className="h-4 w-4" />
                 </div>
               </a>
-              <a href="#" className="text-muted-foreground hover:text-brand-blue transition-all duration-300 group">
+              <a href="https://x.com/i_cell_nitrr" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-brand-blue transition-all duration-300 group">
                 <div className="p-2 rounded-full bg-brand-blue/5 group-hover:bg-brand-blue/10 transition-all duration-300">
                   <Twitter className="h-4 w-4" />
                 </div>
               </a>
-              <a href="#" className="text-muted-foreground hover:text-brand-teal transition-all duration-300 group">
+              <a href="https://www.instagram.com/innovation_cell.nitrr/?hl=en" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-brand-teal transition-all duration-300 group">
                 <div className="p-2 rounded-full bg-brand-teal/5 group-hover:bg-brand-teal/10 transition-all duration-300">
                   <Instagram className="h-4 w-4" />
                 </div>
               </a>
-              <a href="#" className="text-muted-foreground hover:text-brand-blue transition-all duration-300 group">
+              <a href="https://in.linkedin.com/company/innovation-cell-nit-raipur" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-brand-blue transition-all duration-300 group">
                 <div className="p-2 rounded-full bg-brand-blue/5 group-hover:bg-brand-blue/10 transition-all duration-300">
                   <Linkedin className="h-4 w-4" />
                 </div>
@@ -96,8 +96,8 @@ export default function Footer() {
             </ul>
           </div>
           
-          {/* Column 3: Resources */}
-          <div>
+
+{/*           <div>
             <h4 className="font-montserrat font-bold text-lg mb-6 text-foreground">Resources</h4>
             <ul className="space-y-3">
               <li>
@@ -131,8 +131,8 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
-          
+          </div> */}
+           
           {/* Column 4: Newsletter */}
           <div>
             <h4 className="font-montserrat font-bold text-lg mb-6 text-foreground">Stay Updated</h4>
@@ -160,7 +160,7 @@ export default function Footer() {
             <p className="text-muted-foreground text-sm mb-4 md:mb-0 font-nunito-sans">
               &copy; 2024 Innovation Cell, NIT Raipur. All rights reserved.
             </p>
-            <div className="flex space-x-6">
+{/*             <div className="flex space-x-6">
               <Link href="/privacy" className="text-muted-foreground hover:text-brand-blue text-sm transition-all duration-300 font-inter relative group">
                 <span className="relative z-10">Privacy Policy</span>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-blue/50 group-hover:w-full transition-all duration-300"></span>
@@ -173,7 +173,7 @@ export default function Footer() {
                 <span className="relative z-10">Cookie Policy</span>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-blue/50 group-hover:w-full transition-all duration-300"></span>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
