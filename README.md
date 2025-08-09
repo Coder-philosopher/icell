@@ -4,7 +4,7 @@
 
 ## About Innovation Cell, NIT Raipur
 
-Established in **May 2018** under the supervision of the Director and Head of the Career Development Centre (CDC), the Innovation Cell at NIT Raipur nurtures a culture of innovation and entrepreneurship among students. It provides mentorship, seed support (up to ₹25,000), and access to a 24×7 makerspace to support frugal innovation and interdisciplinary collaboration. Promising projects may be incubated through the Technology Business Incubator (TBI).
+Established in **May 2018** under the supervision of the Director and Head of the Career Development Centre (CDC), the Innovation Cell at NIT Raipur nurtures a culture of innovation and entrepreneurship among students. It provides mentorship, seed support, and access to a 24×7 makerspace to support frugal innovation and interdisciplinary collaboration. Promising projects may be incubated through the Technology Business Incubator (TBI).
 
 ## Website Features
 
